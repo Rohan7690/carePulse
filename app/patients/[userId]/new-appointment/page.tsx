@@ -19,9 +19,7 @@ export default async function NewAppointment({params:{userId}}:SearchParamProps)
           <AppointmentForm
             type="create"
             userId={userId}
-            patientId={patient.$id} setOpen={function (open: boolean): void {
-              throw new Error("Function not implemented.");
-            } }          
+            patientId={patient.$id}          
             />
           <div className="copyright py-6 mt-10">
               ©️ 2024 CarePulse

@@ -91,8 +91,8 @@ export const AppointmentForm = ({userId,patientId,type,appointment,setOpen}:{
         const updatedAppointment = await updateAppointment(appointmentToUpdate);
 
         if(updatedAppointment){
-            form.reset();
             setOpen && setOpen(false);
+            form.reset();
         }
         }
     }
