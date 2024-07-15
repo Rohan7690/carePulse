@@ -12,7 +12,7 @@ const fontSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "AppointCare",
+  title: "CarePulse",
   description: "A patient management system for doctors.",
   icons:{
     icon:"/assets/icons/logo-icon.svg",
