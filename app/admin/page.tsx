@@ -9,6 +9,7 @@ import React from 'react'
    
 const Admin = async() => {
     const appointment = await getRecentAppointmentList();
+    console.log(appointment);
 
   return (
     <div className='mx-auto flex max-w-7xl flex-col space-y-14'>
