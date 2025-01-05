@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Care Pulse
 
-## Getting Started
+A healthcare application enabling users to schedule appointments and receive notifications, enhancing healthcare accessibility.
 
-First, run the development server:
+---
+
+## Features
+
+### Appointment Scheduling
+- Easy booking of healthcare appointments.
+- SMS notifications for appointment reminders via **Twilio**.
+
+### Complex Form Handling
+- Dynamic and user-friendly forms for capturing patient and appointment details.
+- Validation and error handling for seamless user experience.
+
+### Admin Panel
+- Passkey validation for Admin Portal.
+- Administrative dashboard for managing appointments, users, and notifications.
+- Role-based access control for secure operations.
+
+### SMS Integration
+- Automated SMS reminders for scheduled appointments.
+- Integration with **Twilio** for reliable message delivery.
+
+### Appwrite Integration
+- Backend-as-a-service for managing user authentication and database operations.
+- Streamlined APIs for faster development.
+
+---
+
+## Technologies Used
+
+### Backend
+- **Next.js**: Framework for React applications.
+- **Appwrite**: Backend services for authentication and data handling.
+- **Twilio**: SMS notification integration.
+
+### Frontend
+- **Next.js** and **TypeScript**: UI development.
+- **Tailwind Css**: Component library for styling.
+
+---
+
+## Prerequisites
+
+- Node and npm installed on your system.
+- Appwrite backend setup and Twilio account for SMS integration.
+
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
+
+### 2. Backend Setup
+Navigate to the backend directory:
+
+```bash
+cd backend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a .env file in the backend directory and add the following:
+
+```env
+PORT=5000
+APPWRITE_PROJECT_ID=<your-appwrite-project-id>
+TWILIO_ACCOUNT_SID=<your-twilio-sid>
+TWILIO_AUTH_TOKEN=<your-twilio-auth-token>
+TWILIO_PHONE_NUMBER=<your-twilio-phone-number>
+```
+
+Start the backend server:
+
+```bash
+npm start
+```
+
+### 3. Frontend Setup
+Navigate to the frontend directory:
+
+```bash
+cd frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the Next.js development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Login Page**
 
-## Learn More
+   ![Login Page](./screenshots/CLogin.png)
 
-To learn more about Next.js, take a look at the following resources:
+2. **Admin Panel**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ![Admin Panel](./screenshots/Admin.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. **Form Handling**
 
-## Deploy on Vercel
+   ![Form Handling](./screenshots/Form.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Appointment Page**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ![Appointment Page](./screenshots/Book.png)
+.png)
