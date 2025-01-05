@@ -124,4 +124,3 @@ npm run dev
 4. **Appointment Page**
 
    ![Appointment Page](./screenshots/Book.png)
-.png)
